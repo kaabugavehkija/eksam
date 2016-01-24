@@ -1,5 +1,3 @@
-import java.util.ArrayList;
-
 /**
  * Siin failis kasutatakse objekti Foor, aga Foor klassi ei eksisteeri. Sinu ülesanne
  * on see luua. Pane tähele, et mitte ükski objekti muutuja ei tohi olla
@@ -28,4 +26,32 @@ public class Objektorienteeritus {
         System.out.println("Fooris põlevad tuled: " + foor.misTuledPolevad());
         System.out.println("Foori nimetus on: " + foor.votaNimetus());
     }
+    public static class Foor {
+
+        public Foor (String fooriNimi) {
+            System.out.println(fooriNimi);
+        }
+
+        public void syytaTuli(String varv) {
+            System.out.println(varv);
+        }
+
+        public void kustutaTuli(String varv) {
+            System.out.println(varv);
+        }
+
+        public String misTuledPolevad() {
+            System.out.println();
+            return "roheline";
+        }
+
+        public String votaNimetus() {
+            return null;
+        }
+
+        public void hakkeridSaidKontrolli() {
+            System.out.println("Paanika!");
+        }
+    }
 }
+
